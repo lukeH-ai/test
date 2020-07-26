@@ -1,0 +1,11 @@
+springboot整合异步线程池和任务调度线程池
+
+异步任务线程池需实现 AsyncConfigurer 接口 ，同时开启 @EnableAsync 线程池
+任务调度线程池需实现 SchedulingConfigurer 接口 ，同时开启 @EnableScheduling 线程池
+
+注： springboot @async 无效问题
+
+1.在@SpringBootApplication启动类 添加注解@EnableAsync
+2.异步方法使用注解@Async ,返回值为void或者Future
+3.切记一点 ,异步方法和调用方法一定要写在不同的类中,如果写在一个类中,是没有效果的！！！
+

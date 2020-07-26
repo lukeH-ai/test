@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="137a9fdc-6696-49b9-881c-b91204d09445" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1av9V7m5TuXy3lOsipjKwxCyWiV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/doc" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.my.druid.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\local_workspace\other\springboot-druid\doc" />
+      <recent name="D:\local_workspace\other\springboot-druid\src\main\java\com\my\druid\config" />
+      <recent name="D:\local_workspace\other\springboot-druid\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="AppDruid" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springboot-druid" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.my.druid.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.my.druid.AppDruid" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.AppDruid" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="137a9fdc-6696-49b9-881c-b91204d09445" name="Default Changelist" comment="" />
+      <created>1587605220247</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587605220247</updated>
+      <workItem from="1587605222825" duration="3587000" />
+      <workItem from="1587612897429" duration="1339000" />
+      <workItem from="1587627456734" duration="28000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587611905608">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1587611905608" />
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1587606566091">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1587606566091" />
+    <state width="1342" height="198" key="GridCell.Tab.0.bottom" timestamp="1587627484052">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1342" height="198" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587627484052" />
+    <state width="1342" height="198" key="GridCell.Tab.0.center" timestamp="1587627484051">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1342" height="198" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587627484051" />
+    <state width="1342" height="198" key="GridCell.Tab.0.left" timestamp="1587627484051">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1342" height="198" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587627484051" />
+    <state width="1342" height="198" key="GridCell.Tab.0.right" timestamp="1587627484051">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1342" height="198" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587627484051" />
+    <state width="1493" height="214" key="GridCell.Tab.1.bottom" timestamp="1587612729004">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="214" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587612729004" />
+    <state width="1493" height="214" key="GridCell.Tab.1.center" timestamp="1587612729004">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="214" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1587612729004" />
+    <state width="1493" height="214" key="GridCell.Tab.1.left" timestamp="1587612729004">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="214" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1587612729004" />
+    <state width="1493" height="214" key="GridCell.Tab.1.right" timestamp="1587612729004">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="214" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1587612729004" />
+    <state x="299" y="68" key="Maven.ArtifactSearchDialog" timestamp="1587606207492">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="299" y="68" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1587606207492" />
+  </component>
+</project>

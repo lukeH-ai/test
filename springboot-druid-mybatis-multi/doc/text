@@ -1,0 +1,12 @@
+springboot整合atomikos实现多数据源动态切换
+
+项目中整合atomikos须使用 6.0.6版本链接5.7版本mysql
+（
+    如果使用8.0高版本的驱动链接8.0版本mysql就会报链接错误，
+    必须使用对应版本的驱动和数据库
+）
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>6.0.6</version>
+        </dependency>

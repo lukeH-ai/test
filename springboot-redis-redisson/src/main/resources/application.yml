@@ -1,0 +1,15 @@
+server:
+  port: 80
+  servlet:
+    context-path: /
+
+#Redis配置
+spring:
+  # redis
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+    redisson:
+      # 配置单点模式
+      config: classpath:redisson-single-dev.yml

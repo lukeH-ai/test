@@ -1,0 +1,8 @@
+server:
+  port: 80
+  servlet:
+    context-path: /
+
+netty:
+  port: 10010
+  url: 127.0.0.1

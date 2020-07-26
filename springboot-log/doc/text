@@ -1,0 +1,31 @@
+springboot整合 logback日志框架
+
+1.导入 logback.xml 文件，注意修改 对应系统的日志文件路径 <property name="log.path" value="/home/ruoyi/logs" />
+
+2.配置 application.yml 中 log 属性
+{
+       # 日志配置
+       logging:
+         level:
+           com.my.log: debug  # 注意书写对应项目包路径 com.my.log
+           org.springframework: warn
+}
+
+3.注意日志正确打印格式：log.info("测试打印用户名：[{}] and 密码：[{}]", "username", 123456);
+
+4.自定义日志文件名称：
+{
+    1.定义日志名称 ：private static final Logger sys_user_logger = LoggerFactory.getLogger("sys-user");
+
+    2.logback.xml中配置：
+
+        <!-- 系统模块日志级别控制  -->
+        <logger name="com.my.log" level="info" />
+
+        <!--系统用户操作日志-->
+        <logger name="sys-user" level="info">
+            <appender-ref ref="sys-user"/>
+        </logger>
+
+     3.日志输出 ：sys_user_logger.info("用户日志记录：[{}]","终于有用户日志啦，啊哈哈");
+}

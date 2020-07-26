@@ -1,0 +1,70 @@
+springboot 2.x 整合shiro
+
+参考：https://www.cnblogs.com/july-sunny/p/11656926.html
+
+
+1.登录过程只做认证操作，认证时将用户名和加盐密码与数据库进行验证，验证通过则返回一个sessionId
+
+2.请求其他接口时通过请求头AUTHORIZATION携带sessionId，进行授权操作
+
+3.定义5张表，其中主要字段和关联关系不可少，其他字段可自由添加
+
+注：
+1.认证过滤器AuthenticationFilter ：适用于 non，authcBasic，auchc，user 等标识
+2.授权过滤器AuthorizationFilter ：适用于 perms，roles，ssl，rest，port 等标识
+3.使用过滤器链完成认证和授权的操作
+
+总结：综上过滤器的不同之处而涉及到权限异常的捕获，如果是通过添加过滤器的方式
+如：filterChainDefinitionMap.put("/video/**", "perms[video:update]");
+则可以通过 shiroFilterFactoryBean.setUnauthorizedUrl("/pub/not_permit");进行捕获异常。
+如果是通过注解方式 如：@RequiresPermissions("video:update") 则需要自定义异常类进行捕获
+异常 ， 如：代码中的 MyExceptionResolver 异常类的写法
+
+
+
+
+==================================================================================
+
+1、Authenticator接口：
+
+认证的接口，包含一个认证的方法，接受AuthenticationToken参数，返回AuthenticationInfo
+
+2、Authorizer接口：
+
+授权的接口，判断是否具有权限，角色等操作。
+
+3、SessionManager接口：
+
+session管理的接口。
+
+4、CachingSecurityManager 抽象类：
+
+只是实现了Destroyable、CacheManagerAware、EventBusAware的接口功能。以上三个接口未在此实现。
+
+5、RealmSecurityManager 抽象类：
+
+实现了Realm对象的设置，一次性设置一个或者多个Realm，设置完成后并将其加入CacheManager和EventBus中，以上三个接口未在此实现。
+
+6、AuthenticatingSecurityManager抽象类：
+
+认证安全管理类，此抽象类型实现了Authenticator接口，但将认证功能委派给了Authenticator接口的实现类ModularRealmAuthenticator。 可以通过设置自定义的ModularRealmAuthenticator来使用自定义的认证规则。
+
+7、ModularRealmAuthenticator：
+
+具体的认证执行者，包含两个属性，一是realms，认证使用的域。二是authenticationStrategy认证的策略，默认为AtLeastOneSuccessfulStrategy。
+
+8、AuthorizingSecurityManager 抽象类：
+
+与认证类相同，实现了授权的接口，但将授权的功能委派给了Authorizer接口实现类ModularRealmAuthorizer。
+
+9、SessionsSecurityManager抽象类：
+
+设置了默认的sessionManager为DefaultSessionManager，但未在此类中实现SessionManager接口
+
+10、DefaultSecurityManager：
+
+默认的实现类，SessionManager接口在此得以实现。主要对Subject的管理，session的管理，remenberme的操作。
+
+11、DefaultWebSecurityManager：
+
+基于web的默认SecurityManager。

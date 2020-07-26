@@ -1,0 +1,3 @@
+该demo 中的 nettyClient 是启动nettyserver的一种方式，和 AppNetty启动类的作用是一样的，
+
+同时 nettyClient 作为后端接受服务器推送消息的方式（面向服务之间推送消息） 和 使用页面作为客户端接收消息类似（面向前后端推送消息）

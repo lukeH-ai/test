@@ -1,0 +1,36 @@
+springboot 整合阿里 JetCache
+
+1.引入依赖
+        <dependency>
+            <groupId>com.alicp.jetcache</groupId>
+            <artifactId>jetcache-starter-redis</artifactId>
+            <version>2.5.11</version>
+        </dependency>
+
+2.添加yml配置
+
+    jetcache:
+      statIntervalMinutes: 15
+      areaInCacheName: false
+      local:
+        default:
+          type: linkedhashmap
+          keyConvertor: fastjson
+          limit: 100
+      remote:
+        default:
+          type: redis
+          keyConvertor: fastjson
+          valueEncoder: java
+          valueDecoder: java
+          poolConfig:
+            minIdle: 5
+            maxIdle: 20
+            maxTotal: 50
+          host: 127.0.0.1
+          port: 6379
+
+3. 缓存方法的注解的使用参考文档:  https://github.com/alibaba/jetcache/wiki/MethodCache_CN
+
+4. jetCache 的API使用参考文档： https://github.com/alibaba/jetcache/wiki/CacheAPI_CN
+注：其中封装了部分 缓存 和 lock锁的操作

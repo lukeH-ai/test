@@ -1,0 +1,16 @@
+热部署参考：
+
+方式1；
+https://www.javazhiyin.com/32982.html
+
+方式2：
+在application.yml中配置
+
+### 添加Spring配置后，就不要需要以上链接中的  CTRL + SHIFT + ALT + / --> 查找Registry --> 找到并勾选compiler.automake.allow.when.app.running
+
+spring:
+  # 服务模块
+  devtools:
+    restart:
+      # 热部署开关
+      enabled: true

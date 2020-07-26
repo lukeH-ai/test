@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.my.datasource.mapper.UserMapper" >
+
+  <!-- 获取用户的基本信息 -->
+  <select id="findByName" parameterType="java.lang.String" resultType="com.my.datasource.domain.User">
+  	SELECT * FROM USER WHERE NAME = #{name};
+  </select>
+  <insert id="insert">
+  	INSERT INTO USER(ID, NAME, AGE) VALUES(#{id}, #{name}, #{age});
+  </insert>
+ 
+</mapper>
